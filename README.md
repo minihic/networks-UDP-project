@@ -33,7 +33,7 @@ Implemented inside the Command Input Handler. Client is designed to be threaded 
 This powershell command will create a 100MB file in your project directory.
 
 ```powershell
-$out = new-object byte[] 104857600; (new-object Random).NextBytes($out); [IO.File]::WriteAllBytes('test,bin', $out)
+$out = new-object byte[] 104857600; (new-object Random).NextBytes($out); [IO.File]::WriteAllBytes('test.bin', $out)
 ```
 
 ##### Handshake Exchange Format
